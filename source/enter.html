@@ -164,12 +164,12 @@
             о курсах
           </p>
         </div>
-        <a href="#" class="like like--header" aria-label="Понравившееся">
+        <a href="#" class="like like--active like--header" aria-label="Понравившееся">
           <svg width="23" height="21">
             <use xlink:href="#icon-like"></use>
           </svg>
           <span class="like__count">
-            0
+            1
           </span>
         </a>
         <div class="search">
@@ -234,99 +234,68 @@
         </ul>
       </div>
     </section>
-    <section class="registration">
-      <div class="registration__mobile-navigation">
-        <div class="container registration__inner">
-          <ul class="registration__menu">
-            <li class="registration__item">
-              <a href="#">
-                Пользователь
-              </a>
-            </li>
-            <li class="registration__item registration__item--active">
-              <a>
-                Организация
-              </a>
-            </li>
-          </ul>
-        </div>
+    <section class="page-name">
+      <div class="container page-name__inner">
+        <h2 class="h2">
+          Войти
+        </h2>
       </div>
-      <div class="registration__background registration__background--desktop">
-        <div class="registration__content">
-          <div class="registration__background registration__background--mobile">
-            <article class="registration__info-block">
-              <div class="container">
-                <div class="registration__text">
-                  <h2>
-                    Присоединяйтесь
-                    <br>
-                    к GetSkill
-                  </h2>
-                  <ul>
-                    <li>
-                      получите личною страницу организации
-                    </li>
-                    <li>
-                      бесплатно выставляйте все курсы
-                    </li>
-                    <li>
-                      мини-CRM для обработки заявок
-                    </li>
-                  </ul>
-                </div>
+    </section>
+    <section class="enter">
+      <div class="container enter__inner">
+        <h2 class="visually-hidden">
+          Форма Входа
+        </h2>
+        <div class="enter__wrapper">
+          <div class="enter__form">
+            <form method="post" action="enter.php" id="enter">
+              <div class="form">
+                <p class="form__control">
+                  <label for="registration_enter_email" class="label">
+                    E-mail
+                  </label>
+                  <input type="email" name="registration_enter_email" class="input input--registration" id="registration_enter_email">
+                </p>
+                <p class="form__control">
+                  <label for="registration_enter_password" class="label">
+                    Пароль
+                  </label>
+                  <input type="password" name="registration_enter_password" class="input input--registration" id="registration_enter_password">
+                  <a href="#" class="link link--enter">
+                    Напомнить пароль
+                  </a>
+                </p>
+                <p class="form__control form__control--submit">
+                  <button type="submit" class="button button--enter">
+                    Войти в учетную запись
+                  </button>
+                </p>
               </div>
-            </article>
+            </form>
           </div>
-          <div class="registration__form">
-            <div class="container">
-              <form action="registration-school.php" method="post" id="registration_school">
-                <div class="form form--registration">
-                  <p class="form__control">
-                    <label for="registration_school_name" class="label">
-                      Имя
-                    </label>
-                    <input type="text" name="registration_school_name" class="input input--registration"
-                           id="registration_school_name">
-                  </p>
-                  <p class="form__control">
-                    <label for="registration_school_email" class="label">
-                      E-mail
-                    </label>
-                    <input type="email" name="registration_school_email" class="input input--registration"
-                           id="registration_school_email">
-                  </p>
-                  <p class="form__control">
-                    <label for="registration_school_password" class="label">
-                      Пароль
-                    </label>
-                    <input type="password" name="registration_school_password" class="input input--registration"
-                           id="registration_school_password">
-                  </p>
-                  <p class="form__control">
-                    <label for="registration_school_password_repeat" class="label">
-                      Повторить пароль
-                    </label>
-                    <input type="password" name="registration_school_password_repeat" class="input input--registration"
-                           id="registration_school_password_repeat">
-                  </p>
-                  <p class="form__control checkbox">
-                    <input type="checkbox" name="registration_privacy_policy" id="registration_privacy_policy"
-                           class="visually-hidden checkbox__input">
-                    <label for="registration_privacy_policy" class="checkbox__label">
-                      C
-                      <a href="#" class="link">
-                        политикой конфиденциальности
-                      </a>
-                      ознакомлен
-                    </label>
-                  </p>
-                  <p class="form__control form__control--submit">
-                    <button type="submit" class="button button--registration">
-                      Зарегистрироваться
-                    </button>
-                  </p>
-                </div>
-              </form>
+          <div class="enter__by-social">
+            <div class="by-social">
+              <p class="by-social__text">
+                Войти с помощью
+              </p>
+              <ul class="by-social__list">
+                <li class="by-social__item">
+                  <a href="#" class="by-social__link by-social__link--google">
+                    <svg width="20" height="19">
+                      <use xlink:href="#icon-google"></use>
+                    </svg>
+                    Вход через Google
+                  </a>
+                </li>
+                <li class="by-social__item">
+                  <a href="#" class="by-social__link by-social__link--facebook">
+                    <svg width="19" height="19">
+                      <use xlink:href="#icon-facebook"></use>
+                    </svg>
+                    Вход через Facebook
+                  </a>
+                </li>
+              </ul>
             </div>
           </div>
         </div>

@@ -1,3 +1,3 @@
 (function () {
-  console.log('sayHi');
+  console.log('sayHi no');
 })();

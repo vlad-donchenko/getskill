@@ -1,0 +1,22 @@
+.form__control {
+  margin: 0 0 22px 0;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.form--registration {
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+.form__control--submit {
+  margin-top: 31px;
+}
+
+@media (min-width: $tablet-large) {
+  .form--registration {
+    padding-bottom: 28px;
+  }
+}

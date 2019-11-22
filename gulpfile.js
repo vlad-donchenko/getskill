@@ -99,6 +99,8 @@ gulp.task("copy", function () {
 
 gulp.task("js-min", function () {
   return gulp.src([
+    "source/js/menu.js",
+    "source/js/footer-acordeon.js",
     "source/js/common.js"
   ])
     .pipe(concat("scripts.min.js"))

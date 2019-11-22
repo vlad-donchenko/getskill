@@ -164,12 +164,12 @@
             о курсах
           </p>
         </div>
-        <a href="#" class="like like--header" aria-label="Понравившееся">
+        <a href="#" class="like like--active like--header" aria-label="Понравившееся">
           <svg width="23" height="21">
             <use xlink:href="#icon-like"></use>
           </svg>
           <span class="like__count">
-            0
+            1
           </span>
         </a>
         <div class="search">
@@ -234,7 +234,7 @@
         </ul>
       </div>
     </section>
-    <section class="registration">
+    <section class="registration registration--user">
       <div class="registration__mobile-navigation">
         <div class="container registration__inner">
           <ul class="registration__menu">
@@ -264,13 +264,13 @@
                   </h2>
                   <ul>
                     <li>
-                      получите личною страницу организации
+                      2351 офлайн и онлайн курсов от 800 школ
                     </li>
                     <li>
-                      бесплатно выставляйте все курсы
+                      830 реальных отзывов от учеников
                     </li>
                     <li>
-                      мини-CRM для обработки заявок
+                      удобный поиск по фильтрам
                     </li>
                   </ul>
                 </div>
@@ -279,39 +279,34 @@
           </div>
           <div class="registration__form">
             <div class="container">
-              <form action="registration-school.php" method="post" id="registration_school">
+              <form action="registration-user.php" method="post" id="registration_user">
                 <div class="form form--registration">
                   <p class="form__control">
-                    <label for="registration_school_name" class="label">
+                    <label for="registration_user_name" class="label">
                       Имя
                     </label>
-                    <input type="text" name="registration_school_name" class="input input--registration"
-                           id="registration_school_name">
+                    <input type="text" name="registration_school_name" class="input input--registration" id="registration_user_name">
                   </p>
                   <p class="form__control">
-                    <label for="registration_school_email" class="label">
+                    <label for="registration_user_email" class="label">
                       E-mail
                     </label>
-                    <input type="email" name="registration_school_email" class="input input--registration"
-                           id="registration_school_email">
+                    <input type="email" name="registration_user_email" class="input input--registration" id="registration_user_email">
                   </p>
                   <p class="form__control">
-                    <label for="registration_school_password" class="label">
+                    <label for="registration_user_password" class="label">
                       Пароль
                     </label>
-                    <input type="password" name="registration_school_password" class="input input--registration"
-                           id="registration_school_password">
+                    <input type="password" name="registration_user_password" class="input input--registration" id="registration_user_password">
                   </p>
                   <p class="form__control">
-                    <label for="registration_school_password_repeat" class="label">
+                    <label for="registration_user_password_repeat" class="label">
                       Повторить пароль
                     </label>
-                    <input type="password" name="registration_school_password_repeat" class="input input--registration"
-                           id="registration_school_password_repeat">
+                    <input type="password" name="registration_user_password_repeat" class="input input--registration" id="registration_user_password_repeat">
                   </p>
                   <p class="form__control checkbox">
-                    <input type="checkbox" name="registration_privacy_policy" id="registration_privacy_policy"
-                           class="visually-hidden checkbox__input">
+                    <input type="checkbox" name="registration_privacy_policy" id="registration_privacy_policy" class="visually-hidden checkbox__input">
                     <label for="registration_privacy_policy" class="checkbox__label">
                       C
                       <a href="#" class="link">
