@@ -165,7 +165,7 @@
             о курсах
           </p>
         </div>
-        <a href="#" class="like like--active like--header" aria-label="Понравившееся">
+        <a href="#" class="like like--header" aria-label="Понравившееся">
           <svg width="23" height="21">
             <use xlink:href="#icon-like"></use>
           </svg>
@@ -235,96 +235,118 @@
         </ul>
       </div>
     </section>
-    <section class="registration registration--user">
-      <div class="registration__mobile-navigation">
-        <div class="container registration__inner">
-          <ul class="registration__menu">
-            <li class="registration__item">
-              <a href="#">
-                Пользователь
-              </a>
-            </li>
-            <li class="registration__item registration__item--active">
-              <a>
-                Организация
-              </a>
-            </li>
-          </ul>
-        </div>
-      </div>
-      <div class="registration__background registration__background--desktop">
-        <div class="registration__content">
-          <div class="registration__background registration__background--mobile">
-            <article class="registration__info-block">
-              <div class="container">
-                <div class="registration__text">
-                  <h2>
-                    Присоединяйтесь
-                    <br>
-                    к GetSkill
-                  </h2>
-                  <ul>
-                    <li>
-                      2351 офлайн и онлайн курсов от 800 школ
-                    </li>
-                    <li>
-                      830 реальных отзывов от учеников
-                    </li>
-                    <li>
-                      удобный поиск по фильтрам
-                    </li>
-                  </ul>
+    <section class="cabinet">
+      <div class="container cabinet__inner">
+        <ul class="menu-cabinet">
+          <li class="menu-cabinet__item">
+            <a href="#" class="menu-cabinet__link">
+              <svg width="21" height="21">
+                <use xlink:href="#icon-cabinet-like"></use>
+              </svg>
+              Избранные
+            </a>
+          </li>
+          <li class="menu-cabinet__item">
+            <a href="#" class="menu-cabinet__link">
+              <svg width="21" height="21">
+                <use xlink:href="#icon-cabinet-setting"></use>
+              </svg>
+              Настройки
+            </a>
+          </li>
+          <li class="menu-cabinet__item">
+            <a href="#" class="menu-cabinet__link">
+              <svg width="21" height="20">
+                <use xlink:href="#icon-cabinet-star"></use>
+              </svg>
+              Отзывы
+            </a>
+          </li>
+          <li class="menu-cabinet__item">
+            <a href="#" class="menu-cabinet__link">
+              <svg width="21" height="21">
+                <use xlink:href="#icon-cabinet-exit"></use>
+              </svg>
+              Выход
+            </a>
+          </li>
+        </ul>
+        <div class="cabinet__info-block">
+          <h2 class="h2">
+            Настройки
+          </h2>
+          <form action="user-cabinet.php" method="post" enctype="multipart/form-data">
+            <div class="cabinet__form">
+              <div class="cabinet__item cabinet__item--avatar">
+                <div class="load-file">
+                  <input type="file" name=cabinet_user_avatar" id="cabinet_user_avatar" class="load-file__input visually-hidden">
+                  <label for="cabinet_user_avatar" class="load-file__content">
+                    <svg width="40" height="42">
+                      <use xlink:href="#icon-download-file"></use>
+                    </svg>
+                    <span class="visually-hidden">
+                      Загрузить аватарку
+                    </span>
+                  </label>
                 </div>
               </div>
-            </article>
-          </div>
-          <div class="registration__form">
-            <div class="container">
-              <form action="registration-user.php" method="post" id="registration_user">
-                <div class="form form--registration">
-                  <p class="form__control">
-                    <label for="registration_user_name" class="label">
-                      Имя
-                    </label>
-                    <input type="text" name="registration_school_name" class="input input--registration" id="registration_user_name">
+              <div class="cabinet__item">
+                <div class="cabinet__description">
+                  <p class="cabinet__title">
+                    Личная информация
                   </p>
-                  <p class="form__control">
-                    <label for="registration_user_email" class="label">
-                      E-mail
-                    </label>
-                    <input type="email" name="registration_user_email" class="input input--registration" id="registration_user_email">
-                  </p>
-                  <p class="form__control">
-                    <label for="registration_user_password" class="label">
-                      Пароль
-                    </label>
-                    <input type="password" name="registration_user_password" class="input input--registration" id="registration_user_password">
-                  </p>
-                  <p class="form__control">
-                    <label for="registration_user_password_repeat" class="label">
-                      Повторить пароль
-                    </label>
-                    <input type="password" name="registration_user_password_repeat" class="input input--registration" id="registration_user_password_repeat">
-                  </p>
-                  <p class="form__control checkbox">
-                    <input type="checkbox" name="registration_privacy_policy" id="registration_privacy_policy" class="visually-hidden checkbox__input">
-                    <label for="registration_privacy_policy" class="checkbox__label">
-                      C
-                      <a href="#" class="link">
-                        политикой конфиденциальности
-                      </a>
-                      ознакомлен
-                    </label>
-                  </p>
-                  <p class="form__control form__control--submit">
-                    <button type="submit" class="button button--registration">
-                      Зарегистрироваться
-                    </button>
+                  <p class="cabinet__text">
+                    Используется при заполнение отзыва и заявки на курс
                   </p>
                 </div>
-              </form>
+                <ul class="cabinet__list">
+                  <li>
+                    <label for="user_cabinet_name" class="label">
+                      Имя
+                    </label>
+                    <input type="text" name="user_cabinet_name" class="input input--cabinet" id="user_cabinet_name">
+                  </li>
+                  <li>
+                    <label for="user_cabinet_phone" class="label">
+                      Телефон
+                    </label>
+                    <input type="tel" name="user_cabinet_phone" class="input input--cabinet" id="user_cabinet_phone">
+                  </li>
+                </ul>
+              </div>
+              <div class="cabinet__item">
+                <div class="cabinet__description">
+                  <p class="cabinet__title">
+                    Логин и пароль
+                  </p>
+                  <p class="cabinet__text">
+                    Используются для авторизации и уведомлений на указанный email.
+                  </p>
+                </div>
+                <div class="cabinet__details">
+                  <p>
+                    <span>
+                      Логин
+                    </span>
+                    <a href="#">
+                      Изменить
+                    </a>
+                  </p>
+                  <p>
+                    <span>
+                      Пароль
+                    </span>
+                    <a href="#">
+                      Изменить
+                    </a>
+                  </p>
+                </div>
+              </div>
+              <button type="submit" class="button button--green">
+                Сохранить
+              </button>
             </div>
-          </div>
+          </form>
         </div>
       </div>
     </section>

@@ -1,0 +1,15 @@
+.load-file__content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 150px;
+  height: 150px;
+  color: $gray-color;
+  border: 1px dashed $gray-color;
+}
+
+@media (min-width: $laptop) {
+  .load-file__input:hover + .load-file__content {
+    border-width: 3px;
+  }
+}

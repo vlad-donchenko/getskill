@@ -1,0 +1,22 @@
+.menu-cabinet {
+  margin: 0;
+  padding-left: 0;
+  list-style: none;
+}
+
+.menu-cabinet__link {
+  position: relative;
+  display: inline-block;
+  padding: 12px 38px 12px 79px;
+  color: $black-color;
+  font-size: 16px;
+  background-color: $gray-standard-color;
+  border-radius: 21px;
+  text-decoration: none;
+}
+
+.menu-cabinet__link svg {
+  position: absolute;
+  left: 20px;
+  top: 11px;
+}
