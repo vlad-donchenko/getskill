@@ -124,6 +124,14 @@
   .form--recovery-password .form__control--description {
     max-width: 439px;
   }
+
+  .form--organization-email .form__control {
+    max-width: 370px;
+  }
+
+  .form--organization-email .form__control--description {
+    max-width: 439px;
+  }
 }
 
 @media (min-width: $desktop) {
@@ -134,5 +142,9 @@
   .form--recovery-password--next-step .form__control--description {
     right: 1px;
     top: 1px;
+  }
+
+  .form--organization-email .form__control {
+    max-width: 430px;
   }
 }

@@ -1,6 +1,6 @@
 .button {
   display: inline-block;
-  padding: 14px 61px;
+  padding: 13px 61px 12px 61px;
   text-align: center;
   font-size: 16px;
   font-weight: 500;
@@ -56,6 +56,39 @@
   }
 }
 
+.button--save {
+  position: relative;
+}
+
+.button--save svg {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.button--organization-cabinet {
+  position: relative;
+  padding-left: 49px;
+  padding-right: 20px;
+}
+
+.button--organization-cabinet svg {
+  position: absolute;
+  left: 20px;
+  top: 15px;
+}
+
+@media (min-width: $tablet) {
+  .button--save {
+    padding: 11px 20px 11px 50px;
+  }
+
+  .button--save svg {
+    left: 20px;
+    top: 10px;
+  }
+}
+
 @media (min-width: $tablet-large) {
   .button--organization-header {
     display: inline-block;
@@ -85,5 +118,11 @@
       color: rgba($green-color, 1);
       box-shadow: 0 0 0 0.2rem rgba($green-color, 0.25);
     }
+  }
+}
+
+@media (min-width: $desktop) {
+  .button--organization-header {
+    letter-spacing: 0.3px;
   }
 }

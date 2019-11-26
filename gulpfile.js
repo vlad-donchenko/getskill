@@ -99,12 +99,15 @@ gulp.task("copy", function () {
 
 gulp.task("js-min", function () {
   return gulp.src([
+    "source/libs/jquery/jquery-3.3.1.min.js",
+    "source/libs/slick/slick.js",
+    "source/js/categories-slider.js",
     "source/js/menu.js",
-    "source/js/footer-acordeon.js",
+    "source/js/footer-accordion.js",
     "source/js/common.js"
   ])
     .pipe(concat("scripts.min.js"))
-    .pipe(jsmin())
+    //.pipe(jsmin())
     .pipe(gulp.dest("build/js"))
     .pipe(server.stream());
 });

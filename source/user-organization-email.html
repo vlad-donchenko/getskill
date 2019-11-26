@@ -240,18 +240,29 @@
         <div class="menu-cabinet">
           <div class="menu-cabinet__item">
             <a href="#" class="menu-cabinet__link">
-              <svg width="21" height="21">
-                <use xlink:href="#icon-cabinet-like"></use>
+              <svg width="23" height="21">
+                <use xlink:href="#icon-cab-org-analysts"></use>
               </svg>
-              Избранные
+              Аналитика
             </a>
           </div>
-          <div class="menu-cabinet__item active">
-            <a class="menu-cabinet__link">
+          <div class="menu-cabinet__item">
+            <a href="#" class="menu-cabinet__link">
               <svg width="21" height="21">
-                <use xlink:href="#icon-cabinet-setting"></use>
+                <use xlink:href="#icon-cab-org-dartz"></use>
               </svg>
-              Настройки
+              Сделки
+              <span class="menu-cabinet__indicator">
+                2
+              </span>
+            </a>
+          </div>
+          <div class="menu-cabinet__item">
+            <a href="#" class="menu-cabinet__link">
+              <svg width="21" height="21">
+                <use xlink:href="#icon-cabinet-clients"></use>
+              </svg>
+              Клиенты
             </a>
           </div>
           <div class="menu-cabinet__item">
@@ -260,9 +271,60 @@
                 <use xlink:href="#icon-cabinet-star"></use>
               </svg>
               Отзывы
+              <span class="menu-cabinet__indicator">
+                2
+              </span>
             </a>
           </div>
-          <div class="menu-cabinet__item menu-cabinet__item--separator">
+          <div class="menu-cabinet__item menu-cabinet__item--separator active">
+            <a class="menu-cabinet__link">
+              <svg width="21" height="21">
+                <use xlink:href="#icon-cabinet-book"></use>
+              </svg>
+              Список курсов
+            </a>
+          </div>
+          <div class="menu-cabinet__item">
+            <a href="#" class="menu-cabinet__link">
+              <svg width="20" height="21">
+                <use xlink:href="#icon-cabinet-master"></use>
+              </svg>
+              Мастер-классы
+            </a>
+          </div>
+          <div class="menu-cabinet__item">
+            <a href="#" class="menu-cabinet__link">
+              <svg width="21" height="20">
+                <use xlink:href="#icon-cabinet-master"></use>
+              </svg>
+              Преподаватели
+            </a>
+          </div>
+          <div class="menu-cabinet__item">
+            <a href="#" class="menu-cabinet__link">
+              <svg width="21" height="21">
+                <use xlink:href="#icon-cabinet-organization"></use>
+              </svg>
+              Организация
+            </a>
+          </div>
+          <div class="menu-cabinet__item menu-cabinet__item--separator menu-cabinet__item--active">
+            <a href="#" class="menu-cabinet__link">
+              <svg width="21" height="21">
+                <use xlink:href="#icon-cabinet-setting"></use>
+              </svg>
+              Настройки
+            </a>
+          </div>
+          <div class="menu-cabinet__item">
+            <a href="#" class="menu-cabinet__link">
+              <svg width="21" height="21">
+                <use xlink:href="#icon-cabinet-card"></use>
+              </svg>
+              Счета и оплата
+            </a>
+          </div>
+          <div class="menu-cabinet__item">
             <a href="#" class="menu-cabinet__link">
               <svg width="21" height="21">
                 <use xlink:href="#icon-cabinet-exit"></use>
@@ -272,86 +334,32 @@
           </div>
         </div>
         <div class="cabinet__info-block">
-          <form action="user-cabinet.php" method="post" enctype="multipart/form-data">
-            <div class="cabinet__form">
-              <div class="cabinet__page-name">
-                <h2 class="h2">
-                  Настройки
-                </h2>
-                <div class="cabinet__submit cabinet__submit--hidden">
-                  <button type="submit" class="button button--cabinet-submit button--save button--green">
-                    <svg width="20" height="21">
-                      <use xlink:href="#icon-save"></use>
-                    </svg>
-                    Сохранить
-                  </button>
-                </div>
-              </div>
-              <div class="cabinet__item cabinet__item--avatar">
-                <div class="load-file">
-                  <input type="file" name=cabinet_user_avatar" id="cabinet_user_avatar" class="load-file__input visually-hidden">
-                  <label for="cabinet_user_avatar" class="load-file__content">
-                    <svg width="40" height="42">
-                      <use xlink:href="#icon-download-file"></use>
-                    </svg>
-                    <span class="visually-hidden">
-                      Загрузить аватарку
-                    </span>
-                  </label>
-                </div>
-              </div>
-              <div class="cabinet__item">
-                <div class="cabinet__description">
-                  <p class="cabinet__title">
-                    Личная информация
-                  </p>
-                  <p class="cabinet__text">
-                    Используется при заполнение отзыва и заявки на курс
-                  </p>
-                </div>
-                <ul class="cabinet__list">
-                  <li>
-                    <label for="user_cabinet_name" class="label">
-                      Имя
-                    </label>
-                    <input type="text" name="user_cabinet_name" class="input input--cabinet" id="user_cabinet_name">
-                  </li>
-                  <li>
-                    <label for="user_cabinet_phone" class="label">
-                      Телефон
-                    </label>
-                    <input type="tel" name="user_cabinet_phone" class="input input--cabinet" id="user_cabinet_phone">
-                  </li>
-                </ul>
-              </div>
-              <div class="cabinet__item">
-                <div class="cabinet__description">
-                  <p class="cabinet__title">
-                    Логин и пароль
-                  </p>
-                  <p class="cabinet__text">
-                    Используются для авторизации и уведомлений на указанный email.
-                  </p>
-                </div>
-                <div class="cabinet__details">
+          <h2 class="h2 h2--cabinet">
+            Изменить e-mail
+          </h2>
+          <form method="post" action="recovery_cabinet_organization_password.php" id="recovery_cabinet_organization_password">
+            <div class="form form--recovery-password form--organization-email">
+              <p class="form__control">
+                <label for="recovery_cabinet_organization_email" class="label">
+                  Новый e-mail
+                </label>
+                <input type="email" name="recovery_cabinet_organization_email" class="input input--registration" id="recovery_cabinet_organization_email">
+              </p>
+              <div class="form__control form__control--description">
+                <div class="form__description">
                   <p>
-                    <span>
-                      Логин
-                    </span>
-                    <a href="#">
-                      Изменить
-                    </a>
-                  </p>
-                  <p>
-                    <span>
-                      Пароль
-                    </span>
-                    <a href="#">
-                      Изменить
-                    </a>
+                    На указанный e-mail будет выслана ссылка по переходе которой, ваш новый e-mail будет потвержден
                   </p>
                 </div>
               </div>
+              <p class="form__control form__control--submit">
+                <button type="submit" class="button button--organization-cabinet">
+                  <svg width="19" height="15">
+                    <use xlink:href="#icon-double-arrows"></use>
+                  </svg>
+                  Изменить e-mail
+                </button>
+              </p>
             </div>
           </form>
         </div>
