@@ -75,4 +75,15 @@
       box-shadow: 0 0 0 0.2rem rgba(#7835bb, 0.25);
     }
   }
+
+  .button--green {
+    &:hover {
+      color: rgba($green-color, 0.6);
+    }
+
+    &:focus {
+      color: rgba($green-color, 1);
+      box-shadow: 0 0 0 0.2rem rgba($green-color, 0.25);
+    }
+  }
 }

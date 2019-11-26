@@ -272,11 +272,16 @@
           </li>
         </ul>
         <div class="cabinet__info-block">
-          <h2 class="h2">
-            Настройки
-          </h2>
           <form action="user-cabinet.php" method="post" enctype="multipart/form-data">
             <div class="cabinet__form">
+              <div class="cabinet__page-name">
+                <h2 class="h2">
+                  Настройки
+                </h2>
+                <button type="submit" class="button button--cabinet-submit button--green">
+                  Сохранить
+                </button>
+              </div>
               <div class="cabinet__item cabinet__item--avatar">
                 <div class="load-file">
                   <input type="file" name=cabinet_user_avatar" id="cabinet_user_avatar" class="load-file__input visually-hidden">
@@ -342,9 +347,6 @@
                   </p>
                 </div>
               </div>
-              <button type="submit" class="button button--green">
-                Сохранить
-              </button>
             </div>
           </form>
         </div>
