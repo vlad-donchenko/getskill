@@ -36,6 +36,17 @@
   width: 100%;
 }
 
+.input--full-width {
+  width: 100%;
+}
+
+.input--textarea {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  height: 200px;
+  resize: none;
+}
+
 @media (min-width: $laptop) {
   .input {
     &:hover {

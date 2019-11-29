@@ -74,6 +74,10 @@
   margin-bottom: 32px;
 }
 
+.form--cabinet-password .form__control {
+  margin: 0 0 32px 0;
+}
+
 @media (min-width: $iphone-breakpoint) {
   .form__content-list li br {
     display: none;
@@ -114,6 +118,22 @@
     top: -1px;
     right: -2px;
   }
+
+  .form--cabinet-email .form__control {
+    max-width: 370px;
+  }
+
+  .form--cabinet-email .form__control--description {
+    max-width: 439px;
+  }
+
+  .form--cabinet-email {
+    max-width: 868px;
+  }
+
+  .form--cabinet-password .form__control--description {
+    top: 1px;
+  }
 }
 
 @media (min-width: $laptop) {
@@ -125,12 +145,12 @@
     max-width: 439px;
   }
 
-  .form--organization-email .form__control {
+  .form--cabinet-password .form__control {
     max-width: 370px;
   }
 
-  .form--organization-email .form__control--description {
-    max-width: 439px;
+  .form--cabinet-password .form__control--description {
+    max-width: 293px;
   }
 }
 
@@ -144,7 +164,13 @@
     top: 1px;
   }
 
-  .form--organization-email .form__control {
+  .form--cabinet-password .form__control,
+  .form--cabinet-email .form__control {
     max-width: 430px;
+  }
+
+  .form--cabinet-password .form__control--description {
+    max-width: 293px;
+    right: 137px;
   }
 }

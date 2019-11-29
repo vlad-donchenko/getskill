@@ -9,7 +9,7 @@
   min-height: 100vh;
   background-color: $white-color;
   transform: translateX(-100%);
-  transition: transform $animation-time $timing-function;
+  transition: transform $animation-time * 2 $timing-function;
   z-index: 10;
 }
 

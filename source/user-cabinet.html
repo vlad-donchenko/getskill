@@ -174,15 +174,17 @@
           </span>
         </a>
         <div class="search">
-          <label for="search" class="search__label">
+          <form method="get" action="search.php" autocomplete="off">
+            <label for="search" class="search__label">
             <span class="visually-hidden">
               Поиск
             </span>
-            <svg width="15" height="16" class="search__icon">
-              <use xlink:href="#icon-search"></use>
-            </svg>
-          </label>
-          <input type="search" name="search" class="input input--search" placeholder="Я ищу..." id="search">
+              <svg width="15" height="16" class="search__icon">
+                <use xlink:href="#icon-search"></use>
+              </svg>
+            </label>
+            <input type="search" name="search" class="input input--search" placeholder="Я ищу..." id="search">
+          </form>
         </div>
         <a href="#" class="button button--organization-header">
           Разместить организацию

@@ -144,7 +144,7 @@
 
     &[href]:focus {
       color: rgba($violet-dark-color, 1);
-      box-shadow: 0 0 0 0.2rem rgba($violet-dark-color, 0.25);
+      background-color: $violet-lite-color;
     }
   }
 }

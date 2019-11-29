@@ -174,15 +174,17 @@
           </span>
         </a>
         <div class="search">
-          <label for="search" class="search__label">
+          <form method="get" action="search.php" autocomplete="off">
+            <label for="search" class="search__label">
             <span class="visually-hidden">
               Поиск
             </span>
-            <svg width="15" height="16" class="search__icon">
-              <use xlink:href="#icon-search"></use>
-            </svg>
-          </label>
-          <input type="search" name="search" class="input input--search" placeholder="Я ищу..." id="search">
+              <svg width="15" height="16" class="search__icon">
+                <use xlink:href="#icon-search"></use>
+              </svg>
+            </label>
+            <input type="search" name="search" class="input input--search" placeholder="Я ищу..." id="search">
+          </form>
         </div>
         <a href="#" class="button button--organization-header">
           Разместить организацию
@@ -294,8 +296,8 @@
           </div>
           <div class="menu-cabinet__item">
             <a href="#" class="menu-cabinet__link">
-              <svg width="21" height="20">
-                <use xlink:href="#icon-cabinet-master"></use>
+              <svg width="21" height="18">
+                <use xlink:href="#icon-cabinet-teacher"></use>
               </svg>
               Преподаватели
             </a>
@@ -337,13 +339,13 @@
           <h2 class="h2 h2--cabinet">
             Изменить e-mail
           </h2>
-          <form method="post" action="recovery_cabinet_organization_password.php" id="recovery_cabinet_organization_password">
-            <div class="form form--recovery-password form--organization-email">
+          <form method="post" action="cabinet_change_email_organization.php" id="cabinet_change_email_organization">
+            <div class="form form--recovery-password form--cabinet-email">
               <p class="form__control">
-                <label for="recovery_cabinet_organization_email" class="label">
+                <label for="cabinet_change_email" class="label">
                   Новый e-mail
                 </label>
-                <input type="email" name="recovery_cabinet_organization_email" class="input input--registration" id="recovery_cabinet_organization_email">
+                <input type="email" name="cabinet_change_email" class="input input--registration" id="cabinet_change_email">
               </p>
               <div class="form__control form__control--description">
                 <div class="form__description">
@@ -353,7 +355,7 @@
                 </div>
               </div>
               <p class="form__control form__control--submit">
-                <button type="submit" class="button button--organization-cabinet">
+                <button type="submit" class="button button--cabinet-submit">
                   <svg width="19" height="15">
                     <use xlink:href="#icon-double-arrows"></use>
                   </svg>
